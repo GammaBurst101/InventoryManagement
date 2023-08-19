@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="413dp"
+        android:layout_height="126dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/butler_bold"
+        android:gravity="left|center_vertical"
+        android:paddingStart="25dp"
+        android:text="Create a new \naccount"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.054" />
+
+
+
+    <EditText
+        android:id="@+id/etEnterEmail"
+        android:layout_width="367dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="440dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        android:paddingStart="15dp"
+        android:paddingEnd="12dp"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="14sp"
+        android:textFontWeight="700"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/etEnterContactNum"
+        android:layout_width="367dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="372dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:hint="Contact Number"
+        android:inputType="textPersonName"
+        android:paddingStart="15dp"
+        android:paddingEnd="12dp"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="14sp"
+        android:textFontWeight="700"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/etEnterAddress"
+        android:layout_width="367dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="300dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:hint="Address"
+        android:inputType="textPersonName"
+        android:paddingStart="15dp"
+        android:paddingEnd="12dp"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="14sp"
+        android:textFontWeight="700"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/etEnterName"
+        android:layout_width="367dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="508dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:hint="Name"
+        android:paddingStart="15dp"
+        android:paddingEnd="12dp"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="14sp"
+        android:textFontWeight="700"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <EditText
+        android:id="@+id/etConfirmPass"
+        android:layout_width="367dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="160dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="22dp"
+        android:hint="Confirm password"
+        android:inputType="textPassword"
+        android:paddingStart="15dp"
+        android:paddingEnd="12dp"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="14sp"
+        android:textFontWeight="700"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/etCreatePass"
+        android:layout_width="367dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="228dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:hint="Create password"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="22dp"
+        android:inputType="textPassword"
+        android:paddingStart="15dp"
+        android:paddingEnd="12dp"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="14sp"
+        android:textFontWeight="700"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="367dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="92dp"
+        android:background="@drawable/custom_button"
+        android:text="Register"
+        android:fontFamily="@font/poppins_bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBarUpdate"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRegister" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

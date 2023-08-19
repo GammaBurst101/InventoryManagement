@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".OrderDetailsActivity">
+
+    <EditText
+            android:id="@+id/phoneNumber"
+            android:layout_width="367dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginBottom="440dp"
+            android:background="@drawable/custom_input"
+            android:ems="10"
+            android:hint="Phone Number"
+            android:paddingStart="15dp"
+            android:paddingEnd="12dp"
+            android:inputType="phone"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="14sp"
+            android:textFontWeight="700"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+            android:id="@+id/quantity"
+            android:layout_width="367dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginBottom="372dp"
+            android:background="@drawable/custom_input"
+            android:ems="10"
+            android:hint="Quantity: 1"
+            android:inputType="number"
+            android:paddingStart="15dp"
+            android:paddingEnd="12dp"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="14sp"
+            android:textFontWeight="700"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+            android:id="@+id/Address"
+            android:layout_width="367dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginBottom="508dp"
+            android:background="@drawable/custom_input"
+            android:ems="10"
+            android:hint="Address"
+            android:paddingStart="15dp"
+            android:paddingEnd="12dp"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="14sp"
+            android:textFontWeight="700"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+            android:id="@+id/dpquantity"
+            android:layout_width="367dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginBottom="508dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:paddingStart="15dp"
+            android:paddingEnd="12dp"
+            android:fontFamily="@font/poppins_bold"
+            android:textFontWeight="700"
+            android:gravity="left|center"
+            android:text="Available:"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/quantity" />
+
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="367dp"
+            android:layout_height="56dp"
+            android:layout_marginBottom="92dp"
+            android:background="@drawable/custom_button"
+            android:text="Submit"
+            android:fontFamily="@font/poppins_bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="367dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="71dp"
+        android:layout_marginBottom="16dp"
+        android:text="Enter Details for Your Order"
+        android:fontFamily="@font/butler_bold"
+        android:textSize="27sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/Address"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="367dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="71dp"
+        android:layout_marginBottom="16dp"
+        android:paddingTop="6dp"
+        android:fontFamily="@font/butler_bold"
+        android:textSize="24dp"
+        android:textColor="@color/grey"
+        android:text="\n(leave empty for default)"
+        app:layout_constraintBottom_toTopOf="@+id/Address"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
